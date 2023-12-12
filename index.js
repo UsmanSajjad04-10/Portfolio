@@ -119,3 +119,34 @@ ScrollReveal().reveal('.home-content p, about-content', { origin: 'right' });
 // // Start the typing animation
 // type();
 
+
+
+
+const form = document.querySelector('form');
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "usman456321@gmail.com",
+    Password : "C24E35B6380A82C387F1C08D6A97C9971A44",
+    To : 'usman456321@gmail.com',
+    From : "usman456321@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
