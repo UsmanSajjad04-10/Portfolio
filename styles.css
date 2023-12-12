@@ -452,12 +452,14 @@ transition: .5s ease;
 
 .portfolio-layer h4{
     font-size: 3rem;
+    color: black;
 
 }
 
 
 .portfolio-layer p{
     font-size: 1.6rem;
+    color: black;
     margin: .3rem 0 1rem;
 }
 .portfolio-layer a{
