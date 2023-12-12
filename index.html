@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"> -->
+  <style>
+    .multitext {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 1px solid #000;
+      animation: typing 3s steps(30, end) infinite, blink-caret 0.5s step-end infinite;
+    }
+
+    @keyframes typing {
+      from, to {
+        width: 0;
+      }
+      50% {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #000;
+      }
+    }
+
+
+.icon-logo{
+  width: 30px;
+  height: 30px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- <h1>dsfsd</h1> -->
+  <div id="mouseTracker"></div>
+  <header class="header" > 
+
+  <box-icon class="menu-icon" id="menu-icon" name='menu'></box-icon >
+  <a href="#" class="logo">portfolio</a>
+  <nav class="navbar">
+    <a href="#home" class="active" >Home</a>
+    <a href="#about">About</a>
+    <a href="#service">Projects</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header> 
+  <section class="home" id="home" >
+  <div class="home-content">
+    <h3 id="rewriting-text" >Hello, Its Me</h3>
+    <h1>Usman</h1>
+    <h3>& I'm a <span id="multitext" ></span></h3>
+    <p>
+      Web developer proficient in HTML, CSS, jQuery, JavaScript, PHP, MySQL, and Bootstrap, crafting seamless and dynamic digital experiences. My portfolio showcases a fusion of creativity and technical prowess, bringing ideas to life with clean and efficient code.</p>
+    <div class="social-media">
+      <a href="https://github.com/UsmanSajjad04-10"><img class="icon-logo" src="img.s/png-clipart-blue-animal-logo-github-icon-github-blue-world-thumbnail-removebg-preview.png" alt=""></a>
+      <a href="www.linkedin.com/in/usman-sajjad7331544709"><img class="icon-logo" src="img.s/linkedin-icon-2048x2048-ya5g47j2-removebg-preview.png" alt=""></a>
+      <!-- <a href="#" id="clickableDiv" ><box-icon type='solid' name='phone'></box-icon></a>  -->
+      <a href="#"><img class="icon-logo" src="img.s/51c8b5c0056891adca221e9f55a4875c-removebg-preview.png" alt=""></a>
+      <!-- <span id="clickCount">+92 3070205951</span> -->
+      <!-- <div id="phoneNumber">
+        <p id="phoneNumberText">Phone Number: <span id="actualPhoneNumber">123-456-7890</span></p>
+      </div> -->
+      
+    </div>
+    <a href="#" class="btn">Download CV</a>
+  </div>
+  <div class="home-img">
+    <img src="img-slider-03 1.png" alt="">
+
+  </div>
+  
+</section>
+   <!-- Element to contain animated typing -->
+   <span id="element"></span>
+
+   <!-- Load library from the CDN -->
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   
+   <!-- Setup and start animation! -->
+
+ 
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="about pic.png" alt="">
+  </div>
+  <div class="about-content">
+    <h2 class="heading">About <span>Me</span></h2>
+    <h3>Frontent Developer!</h3>
+    <p>Web wizard fluent in HTML, CSS, jQuery, and JavaScript, with a backend mastery in PHP and MySQL. Specialized in crafting responsive designs using Bootstrap, ensuring a seamless user experience. My portfolio showcases a dynamic blend of creativity and technical expertise, bringing ideas to life with efficient, elegant code. Let's build the web together!</p>
+  </div>
+  <a href="#" class="btn">Read_more</a>
+</section>
+
+<section class="Service" id="service">
+<h2 class="heading">My <span>Servies</span></h2>
+<div class="service-container">
+<div class="service-box">
+  <img src="img.s/1.jpg" alt="">
+  <box-icon name='code-alt'></box-icon>
+  <h3>Web Development</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum voluptate, voluptatibus veritatis explicabo minima? Sequi cum nostrum, error neque atque voluptatem repellendus, consectetur esse consequuntur temporibus commodi non deserunt.</p>
+  <a href="#" class="btn">Read_more</a>
+</div>
+
+
+<div class="service-box">
+  <img src="img.s/2.jpg" alt="">
+  <box-icon name='code-alt'></box-icon>
+  <h3>Video Editing</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum voluptate, voluptatibus veritatis explicabo minima? Sequi cum nostrum, error neque atque voluptatem repellendus, consectetur esse consequuntur temporibus commodi non deserunt.</p>
+  <a href="#" class="btn">Read_more</a>
+</div>
+
+
+<div class="service-box">
+  <img src="img.s/3.jpe" alt="">
+  <box-icon name='code-alt'></box-icon>
+  <h3>Animaiton</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum voluptate, voluptatibus veritatis explicabo minima? Sequi cum nostrum, error neque atque voluptatem repellendus, consectetur esse consequuntur temporibus commodi non deserunt.</p>
+  <a href="#" class="btn">Read_more</a>
+</div>
+</div>
+</section>
+
+
+<section class="porfolio" id="portfolio"></section>
+<h2 class="heading">Latest <span>Projects</span></h2>
+<div class="porfolio-container">
+  <div class="porfolio-box">
+    <img src="img.s/1.jpg" alt="">
+  <div class="portfolio-layer">
+    <h4>Web Design</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sed reprehenderit quasi enim vitae velit officia, possimus reiciendis quod fuga itaque excepturi perferendis consequatur cupiditate veritatis dolor veniam iste adipisci?</p>
+  <a href="#"><box-icon name='link-external'></box-icon></a>
+</div>
+</div>
+  <div class="porfolio-box">
+  <img src="img.s/1.jpg" alt="">
+  <div class="portfolio-layer">
+  <h4>Web Design</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sed reprehenderit quasi enim vitae velit officia, possimus reiciendis quod fuga itaque excepturi perferendis consequatur cupiditate veritatis dolor veniam iste adipisci?</p>
+  <a href="#"><box-icon name='link-external'></box-icon></a>
+</div>
+</div>
+<div class="porfolio-box">
+  <img src="img.s/1.jpg" alt="">
+  <div class="portfolio-layer">
+  <h4>Web Design</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sed reprehenderit quasi enim vitae velit officia, possimus reiciendis quod fuga itaque excepturi perferendis consequatur cupiditate veritatis dolor veniam iste adipisci?</p>
+  <a href="#"><box-icon name='link-external'></box-icon></a>
+</div>
+</div>
+  <div class="porfolio-box">
+  <img src="img.s/1.jpg" alt="">
+  <div class="portfolio-layer">
+    <h4>Web Design</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sed reprehenderit quasi enim vitae velit officia, possimus reiciendis quod fuga itaque excepturi perferendis consequatur cupiditate veritatis dolor veniam iste adipisci?</p>
+    <a href="#"><box-icon name='link-external'></box-icon></a>
+</div>
+</div>
+  <div class="porfolio-box">
+  <img src="img.s/1.jpg" alt="">
+  <div class="portfolio-layer">
+  <h4>Web Design</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sed reprehenderit quasi enim vitae velit officia, possimus reiciendis quod fuga itaque excepturi perferendis consequatur cupiditate veritatis dolor veniam iste adipisci?</p>
+  <a href="#"><box-icon name='link-external'></box-icon></a>
+</div>
+</div>
+  <div class="porfolio-box">
+  <img src="img.s/1.jpg" alt="">
+  <div class="portfolio-layer">
+  <h4>Web Design</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sed reprehenderit quasi enim vitae velit officia, possimus reiciendis quod fuga itaque excepturi perferendis consequatur cupiditate veritatis dolor veniam iste adipisci?</p>
+  <a href="#"><box-icon name='link-external'></box-icon></a>
+</div>
+</div>
+</div>
+
+
+
+<section class="contact" id="contact"></section>
+<h2 class="heading">Contact <span>Me!</span></h2>
+<form action="#" method="post">
+  <div class="input-box">
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+  </div>
+  <div class="input-box">
+    <input type="number" name="" id="" placeholder="Mobile Number">
+    <input type="text" placeholder="Email Subject">
+    <textarea cols="30" rows="10" placeholder="Your Messege"></textarea>
+    <input type="submit" id="mbtn" value="Send Messege" class="btn">
+  </div>
+
+</form>
+
+
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyright ^ copy; 2023 by Codehal Z | All Rights Reserved</p>
+  </div>
+  <div class="footericontop">
+    <a href="#home"><box-icon name='up-arrow-alt'></box-icon></a>
+  </div>
+</footer>
+
+
+ <!-- Element to contain animated typing -->
+ <!-- <span id="element"></span> -->
+
+ <!-- Load library from the CDN -->
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+ <!-- Setup and start animation! -->
+ <script>
+   var typed = new Typed('#multitext', {
+     strings: ['Frontend Developer.', 'Video Editor.', '2D Artist'],
+     typeSpeed: 100,
+     backSpeed: 100,
+     backDelay: 1000,
+     loop: true
+   });
+
+
+   
+
+   
+ScrollReveal({ 
+  reset: true, 
+  distance: '80px',
+  duration: 2000,
+  delay:200
+});
+
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .service-container, porfolio-box, .content form  ', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, about-content', { origin: 'right' });
+
+
+
+
+// document.getElementById('clickableDiv').addEventListener('click', function() {
+//   document.getElementById('phoneNumber').style.display = 'block';
+// });
+
+</script>
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="index.js" ></script>
+</body>
+</html>
