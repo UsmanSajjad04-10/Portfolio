@@ -1,67 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clickable Image with Phone Number</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>#clickableDiv {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  #iconImage {
-    width: 100px; /* adjust size as needed */
-    height: auto;
-  }
-  
-  #phoneNumber {
-    display: none;
-  }
-  
-  #phoneNumberText {
-    color: #ffffff; /* choose text color */
-  }
-  
-  #actualPhoneNumber {
-    color: #ffffff; /* choose phone number text color */
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .animatedHeading {
+            transition: transform 01s ease;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 <body>
 
-  <div id="clickableDiv">
-    <img src="your_icon_image.jpg" alt="Icon" id="iconImage">
-  </div>
+    <h1 id="animatedHeading">Your Name</h1>
 
-  <div id="phoneNumber">
-    <p id="phoneNumberText">Phone Number: <span id="actualPhoneNumber">123-456-7890</span></p>
-  </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // On page load
+            animateHeading();
 
-  <script>
+            // On scroll
+            window.addEventListener('scroll', function () {
+                animateHeading();
+            });
 
-#clickableDiv {
-  position: relative;
-  cursor: pointer;
-}
+            // Function to animate the heading
+            function animateHeading() {
+                var heading = document.getElementById('animatedHeading');
+                var transformValue = 'translate(' + window.scrollX + 'px, ' + window.scrollY + 'px)';
+                heading.style.transform = transformValue;
+            }
+        });
+    </script>
 
-#iconImage {
-  width: 100px; /* adjust size as needed */
-  height: auto;
-}
-
-#phoneNumber {
-  display: none;
-}
-
-#phoneNumberText {
-  color: #000000; /* choose text color */
-}
-
-#actualPhoneNumber {
-  color: #0000ff; /* choose phone number text color */
-}
-
-  </script>
 </body>
 </html>
