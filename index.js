@@ -67,7 +67,8 @@ ScrollReveal({
   reset: true, 
   distance: '80px',
   duration: 2000,
-  delay:200
+  delay:200,
+
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
@@ -76,6 +77,26 @@ ScrollReveal().reveal('.home-content h1, about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, about-content', { origin: 'right' });
 
 
+// Media query to disable ScrollReveal on smaller screens (less than 768px width)
+// @media (max-width: 768px) {
+//   ScrollReveal().destroy(); // Disable ScrollReveal on smaller screens
+// }
+
+
+function handleResize() {
+  if (window.innerWidth <= 768) {
+     ScrollReveal().destroy(); // Disable ScrollReveal on smaller screens
+  } else {
+     // Initialize ScrollReveal or enable it again if it was previously disabled
+     ScrollReveal().reveal('.some-element');
+  }
+ }
+ 
+ // Attach the event handler to the window's resize event
+ window.addEventListener('resize', handleResize);
+ 
+ // Call the event handler initially to set up the ScrollReveal state based on the current window size
+ handleResize();
 
 
 // var typed = new Typed('.multitext',{

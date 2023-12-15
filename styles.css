@@ -282,7 +282,7 @@ height: 4.4rem;
 }
 
 .about-img img{
-    width: 35wv;
+    width: 500px;
     animation: floatImage 5s ease-in-out infinite;
  /* height: 200px;    */
 }
