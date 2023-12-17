@@ -203,13 +203,13 @@
 <h2 class="heading">Contact <span>Me!</span></h2>
 <form >
   <div class="input-box">
-    <input type="text"  id="name" placeholder="Full Name">
-    <input type="email" id="email" placeholder="Email Address">
+    <input type="text"  id="name" name="name" placeholder="Full Name">
+    <input type="email" id="email" name="email" placeholder="Email Address">
   </div>
   <div class="input-box">
-    <input type="number" name="number" id="" placeholder="Mobile Number">
-    <input type="text"  name="subject" placeholder="Email Subject">
-    <textarea cols="30" rows="10" placeholder="Your Messege"></textarea>
+    <input type="number" name="number"  id="number" placeholder="Mobile Number">
+    <input type="text"  name="subject" id="subject" placeholder="Email Subject">
+    <textarea cols="30" name="message"  id="message" rows="10" placeholder="Your Messege"></textarea>
     <input type="submit" id="mbtn" onclick="sendMail()" value="Send Messege" class="btn">
   </div>
 
@@ -264,6 +264,7 @@ ScrollReveal().reveal('.home-content, .heading ' , { origin: 'top' });
         email : document.getElementById("email").value,
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value,
+        number : document.getElementById("number").value,
 
     }
 
